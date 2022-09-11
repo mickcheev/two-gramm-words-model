@@ -24,7 +24,7 @@ class Model:
 
     def __init__(self, model_path, length, prefix=None):
         self.path = model_path
-        self.length = int(length)
+        self.length = int(length) - 1
         self.prefix = prefix
         self.model = {}
         self.result = ''
