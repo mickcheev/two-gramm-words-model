@@ -58,9 +58,6 @@ class Model:
             else:
                 word = numpy.random.choice(generate_list_of_probability(self.model['$PREFIXs'][self.prefix]))
 
-            if len(word) == 1 and word not in (',', '!', '.', '?'):
-                continue
-
             if word in (',', '!', '?', '.'):
                 self.result += word
 
